@@ -3,6 +3,7 @@ test("RadioButtonsDemo", async ({page})=>{
     await page.goto("https://selenium.qabible.in/radio-button-demo.php")
     await page.locator("#inlineRadio2").check()  //check() method to check the radio button - Female
     await page.getByRole("button",{name:"Show Selected Value"}).click()  //Button click
+   // await expect                     //button to be visible()
     const buttonClickedMessage=page.locator("#message-one")         //Button Click message
     const message= await buttonClickedMessage.textContent()
     console.log(message)
