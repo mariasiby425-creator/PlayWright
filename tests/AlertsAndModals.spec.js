@@ -7,4 +7,6 @@ const modal=page.locator("#exampleModalCenter") //modal locator, considered as p
 await expect(modal).toBeVisible()  
 await modal.locator(".btn.btn-secondary").click()  //child locator, to click on close button 
 await page.waitForTimeout(2000)
+
+//multiple modals 
 })
